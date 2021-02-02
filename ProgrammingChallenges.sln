@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingChallenges", "ProgrammingChallenges\ProgrammingChallenges.csproj", "{9FAFB42C-DD2C-490A-91FE-E733F5A84254}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingChallenges", "ProgrammingChallenges\ProgrammingChallenges.csproj", "{9FAFB42C-DD2C-490A-91FE-E733F5A84254}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameGenerator", "NameGenerator\NameGenerator.csproj", "{2CFCB2F1-5E55-4410-8E50-7405DA3B90AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NameGenerator", "NameGenerator\NameGenerator.csproj", "{2CFCB2F1-5E55-4410-8E50-7405DA3B90AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99136DA6-57C7-4B7E-A2B0-6A712AAF8812}"
+	ProjectSection(SolutionItems) = preProject
+		list.png = list.png
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
