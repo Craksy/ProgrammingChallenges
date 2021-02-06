@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HigerLowerHeadsTails", "HigerLowerHeadsTails\HigerLowerHeadsTails.csproj", "{C0A4BBC3-A49D-431F-80FA-7B75FE3D2DBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HigerLowerHeadsTails", "HigerLowerHeadsTails\HigerLowerHeadsTails.csproj", "{C0A4BBC3-A49D-431F-80FA-7B75FE3D2DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureConverter", "TemperatureConverter\TemperatureConverter.csproj", "{3E93A52A-6E4C-40A1-8456-32D1DC832768}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C0A4BBC3-A49D-431F-80FA-7B75FE3D2DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0A4BBC3-A49D-431F-80FA-7B75FE3D2DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0A4BBC3-A49D-431F-80FA-7B75FE3D2DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E93A52A-6E4C-40A1-8456-32D1DC832768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E93A52A-6E4C-40A1-8456-32D1DC832768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E93A52A-6E4C-40A1-8456-32D1DC832768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E93A52A-6E4C-40A1-8456-32D1DC832768}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
