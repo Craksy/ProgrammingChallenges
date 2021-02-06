@@ -1,4 +1,5 @@
 ﻿using System;
+using ProgrammingChallenges;
 
 namespace HigerLowerHeadsTails
 {
@@ -8,7 +9,7 @@ namespace HigerLowerHeadsTails
         static void Main(string[] args) {
             random = new Random();
             int selection;
-            while ((selection = DisplayMenu("Hello. What would you like to play", "Heads or Tails", "Higher or Lower", "Exit")) != 2) {
+            while ((selection = ConsoleUtils.DisplayMenu("Hello. What would you like to play", "Heads or Tails", "Higher or Lower", "Exit")) != 2) {
                 if (selection == 0)
                     PlayHeadsAndTails();
                 else if (selection == 1)
@@ -19,7 +20,7 @@ namespace HigerLowerHeadsTails
         static void PlayHeadsAndTails() {
             int coin, guess; //heads is 0, tails is 1
             do {
-                guess = DisplayMenu("Make your guess!", "Heads", "Tails");
+                guess = ConsoleUtils.DisplayMenu("Make your guess!", "Heads", "Tails");
                 coin = random.Next(2);
                 string result = guess == coin ? "Way to go! You win!" : "Bummer. You guessed wrong.";
                 Console.WriteLine(result);
@@ -47,41 +48,7 @@ namespace HigerLowerHeadsTails
         }
 
         static bool PlayAgainMenu() { //GudNameSet()
-            return DisplayMenu("Play again or return to main menu?", "Let's go again!", "Back to menu") == 0;
-        }
-
-        static int DisplayMenu(string prompt, params string[] items) {
-            int index = 0;
-            int n = items.Length;
-            Console.Clear();
-            ConsoleKey key = ConsoleKey.NoName;
-            do {
-                if (key == ConsoleKey.UpArrow) {
-                    index--;
-                } else if (key == ConsoleKey.DownArrow) {
-                    index++;
-                }
-                index = (index % n + n) % n; // neat way to handle wrapping at the start and end. I'm so fking clever sometimes.
-
-                Console.Clear();
-                Console.WriteLine(prompt);
-                for (int i = 0; i < items.Length; i++) {
-                    if (i == index) {
-                        Console.ForegroundColor = ConsoleColor.Black;
-                        Console.BackgroundColor = ConsoleColor.White;
-                        Console.Write(">");
-                        Console.WriteLine(items[i]);
-                        Console.ForegroundColor = ConsoleColor.White;
-                        Console.BackgroundColor = ConsoleColor.Black;
-                    } else {
-                        Console.Write(" ");
-                        Console.WriteLine(items[i]);
-                    }
-                }
-
-            } while ((key = Console.ReadKey().Key) != ConsoleKey.Enter);
-            return index;
+            return ConsoleUtils.DisplayMenu("Play again or return to main menu?", "Let's go again!", "Back to menu") == 0;
         }
     }
-
 }
